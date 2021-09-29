@@ -68,7 +68,7 @@ export default function Card(props: cardProps){
         </div>
             
         <div className={classnames("text-right mt-8 ", typeCard=='category'? '':'hidden')}>
-            <Button pill className="m-2 cursor-pointer" variant="primary" onClick={(data)=>onHandleClick(data)}><span className="fa fa-chevron-left" /> PREV</Button>
+            <Button pill className="m-2 cursor-pointer" variant="primary"><span className="fa fa-chevron-left" /> PREV</Button>
             <Button pill className="cursor-pointer" variant="primary">NEXT <span className="fa fa-chevron-right" /></Button>
         </div>
         
