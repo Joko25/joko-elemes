@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import classnames from 'classnames'
-import Rating from "../Rating/rating"
-import { useState } from 'react'
-// import Button from "../Button/button"
+import Image from 'next/image';
+import classnames from 'classnames';
+import Rating from "../Rating/rating";
+import { useState } from 'react';
+import Button from "../Button/button";
 
 interface cardProps{
     typeCard: string;
@@ -68,8 +68,8 @@ export default function Card(props: cardProps){
         </div>
             
         <div className={classnames("text-right mt-8 ", typeCard=='category'? '':'hidden')}>
-            {/* <Button pill className="m-2 cursor-pointer" variant="primary"><span className="fa fa-chevron-left" /> PREV</Button>
-            <Button pill className="cursor-pointer" variant="primary">NEXT <span className="fa fa-chevron-right" /></Button> */}
+            <Button pill className="m-2 cursor-pointer" variant="primary"><span className="fa fa-chevron-left" /> PREV</Button>
+            <Button pill className="cursor-pointer" variant="primary">NEXT <span className="fa fa-chevron-right" /></Button>
         </div>
         
         </>
